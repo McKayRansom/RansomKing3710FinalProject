@@ -6,10 +6,10 @@ USART Serial(USART2);
 using std::string;
 //using std::itoa;
 
-extern "C" void testUART() {
+extern "C" void Serial_Init() {
 	Serial.prep();
 	Serial.Init();
-	Serial.print("HOLO BITCHES\n\r");
+	Serial.print("Startup!\n");
 }
 USART::USART()
 {
@@ -186,8 +186,8 @@ void USART::println(int value, int mode) {
 	println();
 }
 void USART::println(std::string str) {
-	print(str + "\n\r");
+	print(str + "\r");
 }
 void USART::println() {
-	write("\n\r", 2);
+	write("\r", 2);
 }

@@ -221,7 +221,7 @@ void LCD_DisplayName(void){
 
 void LCD_DisplayWelcome(void)
 {
-		uint8_t string[] = {"Welcome"};
+		uint8_t string[] = {"WELCOME"};
     int position = 0;
     while(string[position] != '\0' && position <= 6) {
         LCD_WriteChar(string + position, 0, 0, position);

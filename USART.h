@@ -28,5 +28,5 @@ class USART {
 };
 //#pragma once
 extern USART Serial;
-extern "C" void testUART();
+extern "C" void Serial_Init();
 #endif
